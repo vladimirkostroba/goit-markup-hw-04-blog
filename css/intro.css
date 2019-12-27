@@ -1,0 +1,36 @@
+root {
+  --main-color: #626262;
+  --link-color: #626262;
+  --change-link-color: #03a9f3;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+body {
+  color: var(--main-color);
+  font-family: "Playfair Display", serif;
+}
+
+.link {
+  color: var(--link-color);
+  text-decoration: none;
+  display: block;
+  padding: 12px 32px;
+}
+
+.link:hover,
+.link:focus {
+  color: blue;
+}
+
+.button {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.vova {
+  display: flex;
+  margin-left: 400px;
+  margin-bottom: 50px;
+  list-style: none;
+}

@@ -15,7 +15,7 @@ body {
   color: var(--link-color);
   text-decoration: none;
   display: block;
-  padding: 12px 32px;
+  padding: 12px 100px;
 }
 
 .link:hover,
@@ -23,14 +23,50 @@ body {
   color: blue;
 }
 
+.vova {
+  display: flex;
+  list-style: none;
+}
+header {
+  margin: 75px 150px 100px 150px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+.hey-bro {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: calc(50% - 30px);
+  list-style: none;
+  margin-right: 60px;
+  margin-bottom: 140px;
+}
+
+.item:nth-child(2n) {
+  margin-right: 0px;
+}
+.item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+
 .button {
   font-size: 20px;
   line-height: 1.6;
-}
-
-.vova {
   display: flex;
-  margin-left: 400px;
-  margin-bottom: 50px;
-  list-style: none;
+  justify-content: center;
+  margin-top: 60px;
+  height: 60px;
+  width: 160px;
+  border: solid #626262;
+  margin-left: auto;
+  margin-right: auto;
 }

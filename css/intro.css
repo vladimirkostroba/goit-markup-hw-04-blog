@@ -1,50 +1,63 @@
-root {
+:root {
   --main-color: #626262;
   --link-color: #626262;
-  --change-link-color: #03a9f3;
+  --change-link-color: #42bff6;
   font-size: 14px;
   line-height: 1.6;
+  --main-font: "Playfair Display", serif;
+  --second-font: "Ubuntu", sans-serif;
 }
 
-body {
-  color: var(--main-color);
-  font-family: "Playfair Display", serif;
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.item {
+  list-style: none;
 }
 
 .link {
-  color: var(--link-color);
-  text-decoration: none;
   display: block;
-  padding: 12px 100px;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-decoration: none;
+  color: #626262;
+  font-family: var(--main-font);
 }
 
 .link:hover,
 .link:focus {
-  color: blue;
+  color: #42bff6;
 }
 
-.vova {
-  display: flex;
-  list-style: none;
-}
-header {
-  margin: 75px 150px 100px 150px;
-}
+/*main*/
 
-.gallery {
-  display: flex;
-  justify-content: center;
-}
-.hey-bro {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-  width: 900px;
+.menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .item {
+  margin-bottom: 140px;
   width: calc(50% - 30px);
   list-style: none;
   margin-right: 60px;
@@ -58,15 +71,46 @@ header {
   margin-bottom: 0px;
 }
 
-.button {
-  font-size: 20px;
+img {
+  margin-bottom: 30px;
+}
+
+.text {
+  margin-bottom: 30px;
+  font-family: var(--second-font);
+  font-size: 14px;
   line-height: 1.6;
-  display: flex;
-  justify-content: center;
+  color: #c7c1b6;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: var(--main-font);
+  color: var(--main-color);
+  margin-bottom: 40px;
+}
+
+.inform {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: var(--main-font);
+  color: var(--main-color);
+}
+
+.button {
   margin-top: 60px;
-  height: 60px;
-  width: 160px;
-  border: solid #626262;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+  border: solid #626262;
+  width: 160px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: var(--main-font);
+  background-color: #fff;
+  color: var(--main-color);
 }

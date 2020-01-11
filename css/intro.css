@@ -83,6 +83,7 @@ img {
   color: #c7c1b6;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -93,6 +94,7 @@ img {
   color: var(--main-color);
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 .inform {
@@ -100,6 +102,7 @@ img {
   line-height: 1.6;
   font-family: var(--main-font);
   color: var(--main-color);
+  margin: 0;
 }
 
 .button {
@@ -115,4 +118,9 @@ img {
   font-family: var(--main-font);
   background-color: #fff;
   color: var(--main-color);
+}
+
+.button:hover,
+.button:focus {
+  color: #42bff6;
 }

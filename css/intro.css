@@ -68,9 +68,6 @@
 .item:nth-child(2n) {
   margin-right: 0px;
 }
-.item:nth-last-child(-n + 2) {
-  margin-bottom: 0px;
-}
 
 img {
   margin-bottom: 30px;
